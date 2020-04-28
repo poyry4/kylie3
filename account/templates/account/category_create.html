@@ -1,0 +1,16 @@
+<h1>Admin page</h1>
+
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Save">
+</form>
+
+
+
+<h2>{{ categorys.title }}</h2>
+<h3> {{ categorys.imgCat }}</h3>
+
+
+{% endblock %}
